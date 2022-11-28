@@ -1,0 +1,111 @@
+body {
+	background-color: white;
+}
+
+.container {
+	width: 1024px;
+	margin: 30px auto;
+
+
+}
+.header {
+	position: relative;
+}
+
+.header.unindra{
+	width: 100px;
+	position: absolute;
+	top: -8px;
+	left: 210px;
+	
+}
+
+.header.unindra {
+	width: 100px;
+	position: absolute;
+	top: -8px;
+	right: 210px;
+}
+
+.header h1 {
+	
+	padding-top: 20px;
+	font-size: 18px;
+	color: blue;
+}
+
+.header em {
+
+	font-size: 15px;
+
+}
+.header text {
+	color: black;
+}
+
+.container-garis {
+	width: 1024px;
+	margin: auto;
+	
+}
+
+.garis {
+	position: relative;
+}
+
+.garis hr {
+	border: 0;
+	height: 2px;
+	background-color: black;
+}
+
+.garis tr td {
+	background-color: #fff105;
+	color: black;
+}
+
+.garis .nama {
+	position: absolute;
+	right: 15px;
+}
+
+.konten h3 {
+	text-align: center;
+	margin-top: 120px;
+	font-weight: strong;
+	color: black;
+}
+
+.konten table {
+	background-color: white;
+	font-weight: bold;
+	color: black;
+}
+
+.konten .pinggir {
+	background-color: #f9a98c;
+	width: 240px;
+	color: black;
+}
+
+.konten .kanan {
+	width: 100px;
+	background-color: yellow;
+	color: black;
+}
+
+.container-catatan {
+	width: 1024px;
+	margin: auto;
+}
+
+.catatan {
+	position: absolute;
+	margin:30px -50px;
+	color: white;
+}
+
+.catatan ul li {
+	font-style: italic;
+	color: black;
+}

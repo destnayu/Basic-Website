@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UAS Nomor 3 slebew</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="utama">
+                <h2 class="word">INPUT DATA GAJI KARYAWAN</h2>
+                <form action="" methode="post">
+                    <ul> <li> <label for="gapok">Gaji Pokok </label>
+                              <input type="text" name="gapok" id="gapok" size="30" maxlength="30" /> </li>
+                         <li> <label for="lembur">Uang Lembur </label>
+                              <input type="text" name="lembur" id="lembur" size="30" maxlength="30" /> </li>
+                        <li>  <label for="tunjangan">Tunjangan </label>
+                              <input type="text" name="tunjangan" id="tunjangan" size="30" maxlength="30" /> </li>
+                        <li>  <label for="utang">Utang </label>
+                              <input type="text" name="utang" id="utang" size="30" maxlength="30" /> </li>
+                        <div class="button"> 
+                            <button type="button" value="hitung" id="hitung" name="hitung">Hitung</button>
+                            <button type="button" value="Batal" id="reset" name="batal">Reset</button>
+                        </div> </ul> </form>
+                <h3>Status Golongan Karyawan : <span></span></h3>
+            </div> </div>
+        <div class="footer">
+            <h3> </em></h3>
+        </div> </div>
+    <script>
+        var btnHitung = document.getElementById("hitung");
+        var btnReset = document.getElementById("reset");
+        function proses(event) {
+            var gapok, utang, lembur, tunjangan;
+            gapok = document.getElementById("gapok");
+            utang = document.getElementById("utang");
+            lembur = document.getElementById("lembur");
+            tunjangan = document.getElementById("tunjangan");
+            // event.preventDefault();
+            if (parseFloat(gapok.value) < 0 || parseFloat(utang.value) < 0 || parseFloat(tunjangan.value) < 0 ||
+                parseFloat(lembur.value) < 0) {
+                alert('Uang harus lebih besar dari 0 !');
+                return;
+            }
+            var gaji = 0,
+                hasil = document.querySelector("h3 span");
+            gaji = parseFloat(gapok.value) + parseFloat(lembur.value) + parseFloat(tunjangan.value) - parseFloat(utang.value);
+            if (gaji <= 5000000) status = "Honor";
+            else if (gaji >= 5000000 && gaji < 10000000) status = "kontrak";
+            if (gaji >= 10000000) status = "Tetap";
+            hasil.innerHTML = status;
+        }
+               hitung.addEventListener("click", proses);
+    </script>
+</body>
+</html> 

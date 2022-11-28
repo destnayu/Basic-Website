@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Nilai Mahasiswa</title>
+</head>
+<link rel="stylesheet" type="text/css" href="cssInputNilaiMhs.css">
+<body>
+	<div class="con-form1">
+		<div class="form1">
+			<center>
+				<img src="unindra.png">
+				<h1>INPUT NILAI MAHASISWA</h1>
+			</center>
+		</div>
+
+		<form>
+			<table border="0" width="900px" >
+				<tr>
+					<td><label>NPM</label></td>
+					<td>:</td>
+					<td><input type="text" name="npm"></td>
+				<tr>
+					<td><label>Nama Lengkap</label></td>
+					<td>:</td>
+					<td><input type="text" name="npm" style="width: 700px"></td>
+				</tr>
+				<tr>
+					<td><label>Jenis Kelamin</label></td>
+					<td>:</td>
+					<td><label><input type="radio" name="jk" value="laki-laki">Laki - Laki</label>
+					<label><input type="radio" name="jk" value="perempuan">Perempuan</label></td>
+				</tr>
+				<tr>
+					<td><label>Mata Kuliah</label></td>
+					<td>:</td>
+					<td><select name="matkul">
+						<option value="pemrograman">Pemrograman Web Dasar</option>
+						<option value="webdesign">Web Design</option>
+						<option value="pemrograman">UI/UX</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><label>Keterangan</label></td>
+					<td>:</td>
+					<td><textarea name="ket" style="width: 340px"></textarea></td>
+				</tr>
+			</table>	
+		</form>
+	</div>
+	<div class="con-form1">
+		<div class="form1">
+				<center>
+					<h2>NILAI</h2>
+				</center>
+			 <table border="0" cellspacing="0" cellpadding="5">
+         <form action="contact.php" method="POST">
+        <p><tr>
+            <td><label>TUGAS<td>:</td></label></td>
+            <td><input type="text" name="TUGAS"/></td>
+			<td><i>* Diisi dengan Angka (Misal :8.82)</i></td>
+        </p></tr>
+        <p><tr>
+            <td><label>UTS<td>:</td></label></td>
+            <td><input type="text" name="UTS" /></td>
+			<td><i>* Diisi dengan Angka (Misal :6.62)</i></td>
+        </p></tr>
+		<p><tr>
+            <td><label>UAS<td>:</td></label></td>
+            <td><input type="text" name="UAS" /></td>
+			<td><i>* Diisi dengan Angka (Misal :10.0)</i></td>
+        </p></tr>
+		</form></table>
+		<tr>
+				<tr>
+					<td colspan="3" align="" class="button"><input type="submit" style="margin-left: 130px;" value="Simpan"><input type="reset" value="Batal"></td>
+				</tr>
+			</form>
+			</table>
+		</div>
+	</div>
+	<div class="con-form3">
+		<div class="form3">
+			<hr>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+.con-form1 {
+	width: 1024px;
+	margin: auto;
+	background-color: white;
+}
+
+.con-form1 .form1 {
+	margin-top: 25px;
+}
+
+.form1 img {
+	width: 120px;
+}
+
+table {
+	font-weight: bold;
+	
+}
+
+.form1 h1 {
+	font-size: 22px;
+	color: white;
+	background-color: lightgray;
+}
+
+.form1 h2 {
+	font-size: 22px;
+	color: white;
+	background-color: gray;
+}
+
+.con-form3{
+	width: 1024px;
+	margin: auto;
+}
+
+.form3 hr {
+	background-color: gray;
+	height: 26px;
+	border:0;
+}
